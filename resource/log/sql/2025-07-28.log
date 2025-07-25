@@ -1,0 +1,238 @@
+2025-07-28T14:04:58.099+08:00 [DEBU] {9fdddf5c1f555618e402a259772fdff3} [  2 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:04:58.103+08:00 [DEBU] {da42235d1f555618e502a2595b031891} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:04:58.103+08:00 [DEBU] {750b355d1f555618e602a259efc0d383} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:05:50.000+08:00 [DEBU] {db0971722b5556186fc82f4e508773d2} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:05:50.001+08:00 [DEBU] {502689722b55561870c82f4e015e3e46} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:05:50.002+08:00 [DEBU] {fb2b98722b55561871c82f4e874a388e} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:06:54.010+08:00 [DEBU] {9621a9593a55561873c82f4e62aff536} [  2 ms] [default] [device_management] [rows:7  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T14:06:54.011+08:00 [ERRO] {9621a9593a55561873c82f4e62aff536} [  0 ms] [default] [device_management] [rows:0  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES('string','string','string','2025-07-28 14:06:54','2025-07-28 14:06:54') 
+Error: Error 1366 (HY000): Incorrect integer value: 'string' for column 'pid' at row 1 
+Stack:
+1.  DeviceManagement/internal/logics.(*productCategory).Add
+    /home/yyboo/platform/sq/IOT/DeviceManagement/internal/logics/product_category.go:40
+2.  DeviceManagement/internal/controller.(*productCategoryController).Add
+    /home/yyboo/platform/sq/IOT/DeviceManagement/internal/controller/product_category.go:16
+
+2025-07-28T14:08:15.329+08:00 [DEBU] {416db6484d55561838d34e57fb1f8fbc} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:08:15.330+08:00 [DEBU] {9621cd484d55561839d34e57ebb7ead2} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:08:15.330+08:00 [DEBU] {b81edd484d5556183ad34e572fe7a894} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:08:32.720+08:00 [DEBU] {503e4e55515556183bd34e575d0d9a38} [  1 ms] [default] [device_management] [rows:7  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T14:08:32.726+08:00 [DEBU] {503e4e55515556183bd34e575d0d9a38} [  6 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(0,'1','一级目录','2025-07-28 14:08:32','2025-07-28 14:08:32') 
+2025-07-28T14:12:05.591+08:00 [DEBU] {45e61ae5825556183cd34e570a809817} [  6 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(0,'1','一级目录','2025-07-28 14:12:05','2025-07-28 14:12:05') 
+2025-07-28T14:12:41.068+08:00 [DEBU] {8490f3278b55561864d7653f0cbf58f7} [  2 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:12:41.068+08:00 [DEBU] {83260d288b55561865d7653f1a5c0ca5} [  0 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:12:41.069+08:00 [DEBU] {84041d288b55561866d7653f27e09b8b} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:12:45.066+08:00 [DEBU] {388a54168c55561867d7653f961691dc} [  1 ms] [default] [device_management] [rows:7  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T14:12:45.072+08:00 [DEBU] {388a54168c55561867d7653f961691dc} [  5 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(0,'1','一级目录','2025-07-28 14:12:45','2025-07-28 14:12:45') 
+2025-07-28T14:13:15.119+08:00 [DEBU] {74279e159355561868d7653f569fcb9b} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE (`pid`=1) AND `deleted_at` IS NULL
+2025-07-28T14:13:15.125+08:00 [DEBU] {74279e159355561868d7653f569fcb9b} [  5 ms] [default] [device_management] [rows:1  ] UPDATE `t_product_category` SET `deleted_at`='2025-07-28 14:13:15' WHERE (`id`=1) AND `deleted_at` IS NULL
+2025-07-28T14:13:50.055+08:00 [DEBU] {d6d4ed379b555618b22018079af2d972} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:13:50.056+08:00 [DEBU] {ff4306389b555618b32018077c3ecb28} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:13:50.057+08:00 [DEBU] {ddf917389b555618b42018074c011376} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:13:58.244+08:00 [DEBU] {c7f713209d555618b52018077b252225} [  1 ms] [default] [device_management] [rows:7  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T14:13:58.245+08:00 [DEBU] {c7f713209d555618b52018077b252225} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE (`pid`=1) AND `deleted_at` IS NULL
+2025-07-28T14:13:58.246+08:00 [DEBU] {c7f713209d555618b52018077b252225} [  0 ms] [default] [device_management] [rows:0  ] UPDATE `t_product_category` SET `deleted_at`='2025-07-28 14:13:58' WHERE (`id`=1) AND `deleted_at` IS NULL
+2025-07-28T14:14:48.687+08:00 [DEBU] {2ff963dea8555618b620180717d728f5} [  6 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(0,'1','一级目录','2025-07-28 14:14:48','2025-07-28 14:14:48') 
+2025-07-28T14:14:52.561+08:00 [ERRO] {3931a7c5a9555618b720180728947d92} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE (`pid`=1) AND `deleted_at` IS NULL
+Error: Error 1054 (42S22): Unknown column 'deleted_at' in 'where clause' 
+Stack:
+1.  DeviceManagement/internal/logics.(*productCategory).deleteCategory
+    /home/yyboo/platform/sq/IOT/DeviceManagement/internal/logics/product_category.go:127
+2.  DeviceManagement/internal/logics.(*productCategory).Delete
+    /home/yyboo/platform/sq/IOT/DeviceManagement/internal/logics/product_category.go:49
+3.  DeviceManagement/internal/controller.(*productCategoryController).Delete
+    /home/yyboo/platform/sq/IOT/DeviceManagement/internal/controller/product_category.go:28
+
+2025-07-28T14:14:52.562+08:00 [ERRO] {3931a7c5a9555618b720180728947d92} [  0 ms] [default] [device_management] [rows:0  ] UPDATE `t_product_category` SET `deleted_at`='2025-07-28 14:14:52' WHERE (`id`=1) AND `deleted_at` IS NULL
+Error: Error 1054 (42S22): Unknown column 'deleted_at' in 'where clause' 
+Stack:
+1.  DeviceManagement/internal/logics.(*productCategory).deleteCategory.func1
+    /home/yyboo/platform/sq/IOT/DeviceManagement/internal/logics/product_category.go:123
+2.  DeviceManagement/internal/logics.(*productCategory).deleteCategory
+    /home/yyboo/platform/sq/IOT/DeviceManagement/internal/logics/product_category.go:129
+3.  DeviceManagement/internal/logics.(*productCategory).Delete
+    /home/yyboo/platform/sq/IOT/DeviceManagement/internal/logics/product_category.go:49
+4.  DeviceManagement/internal/controller.(*productCategoryController).Delete
+    /home/yyboo/platform/sq/IOT/DeviceManagement/internal/controller/product_category.go:28
+
+2025-07-28T14:17:33.595+08:00 [DEBU] {4dd4fc43cf55561878010a632a89dbed} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:17:33.596+08:00 [DEBU] {bfa50f44cf55561879010a63d133c1a3} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:17:33.597+08:00 [DEBU] {5a0f1f44cf5556187a010a63265ef69b} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:17:39.159+08:00 [DEBU] {05aca28fd05556187b010a633839e20a} [  1 ms] [default] [device_management] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-07-28T14:17:39.160+08:00 [DEBU] {05aca28fd05556187b010a633839e20a} [  1 ms] [default] [device_management] [rows:6  ] [txid:1] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T14:17:39.160+08:00 [DEBU] {05aca28fd05556187b010a633839e20a} [  0 ms] [default] [device_management] [rows:1  ] [txid:1] DELETE FROM `t_product_category` WHERE `id`=1
+2025-07-28T14:17:39.189+08:00 [DEBU] {05aca28fd05556187b010a633839e20a} [ 29 ms] [default] [device_management] [rows:0  ] [txid:1] COMMIT
+2025-07-28T14:17:39.189+08:00 [DEBU] {05aca28fd05556187b010a633839e20a} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=1
+2025-07-28T14:17:39.190+08:00 [DEBU] {05aca28fd05556187b010a633839e20a} [  1 ms] [default] [device_management] [rows:0  ] DELETE FROM `t_product_category` WHERE `id`=1
+2025-07-28T14:31:50.690+08:00 [DEBU] {6f10ddd2965656187c010a6312eea52d} [  0 ms] [default] [device_management] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-07-28T14:31:50.691+08:00 [DEBU] {6f10ddd2965656187c010a6312eea52d} [  1 ms] [default] [device_management] [rows:0  ] [txid:2] DELETE FROM `t_product_category` WHERE `id`=1
+2025-07-28T14:31:50.691+08:00 [DEBU] {6f10ddd2965656187c010a6312eea52d} [  0 ms] [default] [device_management] [rows:0  ] [txid:2] COMMIT
+2025-07-28T14:31:50.691+08:00 [DEBU] {6f10ddd2965656187c010a6312eea52d} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=1
+2025-07-28T14:31:50.692+08:00 [DEBU] {6f10ddd2965656187c010a6312eea52d} [  1 ms] [default] [device_management] [rows:0  ] DELETE FROM `t_product_category` WHERE `id`=1
+2025-07-28T14:32:05.893+08:00 [DEBU] {8f5a0d5d9a5656187d010a639ebc0db7} [  0 ms] [default] [device_management] [rows:0  ] [txid:3] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2025-07-28T14:32:05.894+08:00 [DEBU] {8f5a0d5d9a5656187d010a639ebc0db7} [  1 ms] [default] [device_management] [rows:0  ] [txid:3] DELETE FROM `t_product_category` WHERE `id`=1
+2025-07-28T14:32:05.894+08:00 [DEBU] {8f5a0d5d9a5656187d010a639ebc0db7} [  0 ms] [default] [device_management] [rows:0  ] [txid:3] COMMIT
+2025-07-28T14:32:05.894+08:00 [DEBU] {8f5a0d5d9a5656187d010a639ebc0db7} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=1
+2025-07-28T14:32:05.895+08:00 [DEBU] {8f5a0d5d9a5656187d010a639ebc0db7} [  0 ms] [default] [device_management] [rows:0  ] DELETE FROM `t_product_category` WHERE `id`=1
+2025-07-28T14:33:27.299+08:00 [DEBU] {8b0e2751ad5656184aac386e67b6c6cc} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:33:27.300+08:00 [DEBU] {6d7c3b51ad5656184bac386e97bba339} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:33:27.300+08:00 [DEBU] {747e4a51ad5656184cac386e6866ddb8} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:33:40.715+08:00 [DEBU] {a264c770b05656184dac386ea69c1a7c} [  2 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T14:33:40.715+08:00 [DEBU] {a264c770b05656184dac386ea69c1a7c} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=1
+2025-07-28T14:33:40.716+08:00 [DEBU] {a264c770b05656184dac386ea69c1a7c} [  1 ms] [default] [device_management] [rows:0  ] DELETE FROM `t_product_category` WHERE `id` IN(1)
+2025-07-28T14:33:55.120+08:00 [DEBU] {5fd12acbb35656184eac386e09c417e2} [  5 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(0,'1','一级目录','2025-07-28 14:33:55','2025-07-28 14:33:55') 
+2025-07-28T14:34:11.800+08:00 [DEBU] {274756adb75656184fac386e6553dac5} [  6 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(2,'1','二级目录','2025-07-28 14:34:11','2025-07-28 14:34:11') 
+2025-07-28T14:34:37.684+08:00 [DEBU] {61c075b4bd56561850ac386e5f11c934} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=1
+2025-07-28T14:34:37.684+08:00 [DEBU] {61c075b4bd56561850ac386e5f11c934} [  0 ms] [default] [device_management] [rows:0  ] DELETE FROM `t_product_category` WHERE `id` IN(1)
+2025-07-28T14:35:19.432+08:00 [DEBU] {eac3d46cc756561851ac386e601bcedc} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=2
+2025-07-28T14:35:19.433+08:00 [DEBU] {eac3d46cc756561851ac386e601bcedc} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=3
+2025-07-28T14:35:19.438+08:00 [DEBU] {eac3d46cc756561851ac386e601bcedc} [  5 ms] [default] [device_management] [rows:2  ] DELETE FROM `t_product_category` WHERE `id` IN(2,3)
+2025-07-28T14:35:49.112+08:00 [DEBU] {2fe79a55ce56561852ac386ec5977c0b} [  5 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(0,'1','二级目录','2025-07-28 14:35:49','2025-07-28 14:35:49') 
+2025-07-28T14:36:21.279+08:00 [DEBU] {aad2cbcfd556561853ac386e9d1c092f} [ 58 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(4,'1','二级目录','2025-07-28 14:36:21','2025-07-28 14:36:21') 
+2025-07-28T14:41:30.602+08:00 [DEBU] {375445d81d5756180e85d92ec3b49974} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:41:30.604+08:00 [DEBU] {97395dd81d5756180f85d92ea93a08fd} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:41:30.604+08:00 [DEBU] {0e0771d81d5756181085d92e6a22b6e2} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:41:32.570+08:00 [DEBU] {9f458a4d1e5756181185d92e33ffd1cb} [  1 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T14:41:32.575+08:00 [DEBU] {9f458a4d1e5756181185d92e33ffd1cb} [  5 ms] [default] [device_management] [rows:1  ] UPDATE `t_product_category` SET `pid`=0,`name`='一级目录',`updated_at`='2025-07-28 14:41:32' WHERE `id`=4
+2025-07-28T14:42:27.115+08:00 [DEBU] {4ca8ae002b575618e19aee1944b63e54} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:42:27.116+08:00 [DEBU] {a6dbc2002b575618e29aee1901881798} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:42:27.116+08:00 [DEBU] {a582d2002b575618e39aee1950d62c7e} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:43:12.709+08:00 [DEBU] {0a474f9e35575618118d610308aceb15} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:43:12.710+08:00 [DEBU] {1371669e35575618128d61036826e4ac} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:43:12.711+08:00 [DEBU] {493c7a9e35575618138d61033b26096f} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:44:03.230+08:00 [DEBU] {44fb9b6141575618a02b806a10dfc6eb} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:44:03.231+08:00 [DEBU] {830eb06141575618a12b806afc2379e4} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:44:03.232+08:00 [DEBU] {32b2c16141575618a22b806afd29603e} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:45:00.142+08:00 [DEBU] {67a1d1a14e575618fc2e4e5496e931a0} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T14:45:00.143+08:00 [DEBU] {a335e4a14e575618fd2e4e547e4ec74f} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T14:45:00.143+08:00 [DEBU] {0545f2a14e575618fe2e4e542ee8c89c} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T14:47:16.604+08:00 [DEBU] {3cfc8d676e575618042f4e5455b0f17f} [  2 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T14:47:16.604+08:00 [DEBU] {3cfc8d676e575618042f4e5455b0f17f} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:22:20.929+08:00 [DEBU] {b40f275b58595618fff445712d4decfc} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T15:22:20.930+08:00 [DEBU] {f69b3a5b5859561800f54571077b351a} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T15:22:20.931+08:00 [DEBU] {1c51495b5859561801f545710c2ab50c} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T15:23:46.093+08:00 [DEBU] {881b512f6c595618ed6b353ae73d9fa1} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T15:23:46.094+08:00 [DEBU] {7651662f6c595618ee6b353a3424df30} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T15:23:46.095+08:00 [DEBU] {4756742f6c595618ef6b353afb3f0387} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T15:24:02.962+08:00 [DEBU] {3c24ce1c70595618f06b353adf42b6b5} [  0 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T15:24:02.963+08:00 [DEBU] {3c24ce1c70595618f06b353adf42b6b5} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:24:02.963+08:00 [DEBU] {3c24ce1c70595618f06b353adf42b6b5} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:24:02.963+08:00 [DEBU] {3c24ce1c70595618f06b353adf42b6b5} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T15:24:02.964+08:00 [DEBU] {3c24ce1c70595618f06b353adf42b6b5} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T15:24:02.964+08:00 [DEBU] {3c24ce1c70595618f06b353adf42b6b5} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T15:26:59.276+08:00 [DEBU] {e65ceb2999595618f67e4d6ee0be49bb} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T15:26:59.277+08:00 [DEBU] {a9e7ff2999595618f77e4d6e950b160e} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T15:26:59.278+08:00 [DEBU] {346a112a99595618f87e4d6ef503f0b0} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T15:27:01.191+08:00 [DEBU] {2e070b9c99595618f97e4d6efad43acd} [  1 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T15:27:01.191+08:00 [DEBU] {2e070b9c99595618f97e4d6efad43acd} [  0 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:27:01.191+08:00 [DEBU] {2e070b9c99595618f97e4d6efad43acd} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:27:01.192+08:00 [DEBU] {2e070b9c99595618f97e4d6efad43acd} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T15:27:01.192+08:00 [DEBU] {2e070b9c99595618f97e4d6efad43acd} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T15:27:01.192+08:00 [DEBU] {2e070b9c99595618f97e4d6efad43acd} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T15:27:43.997+08:00 [DEBU] {a4ca2e93a3595618fa7e4d6ebab7b190} [  6 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(4,'1','二级目录','2025-07-28 15:27:43','2025-07-28 15:27:43') 
+2025-07-28T15:27:47.898+08:00 [DEBU] {6e38067ca4595618fb7e4d6ee8243107} [  1 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:27:47.898+08:00 [DEBU] {6e38067ca4595618fb7e4d6ee8243107} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:27:47.898+08:00 [DEBU] {6e38067ca4595618fb7e4d6ee8243107} [  0 ms] [default] [device_management] [rows:2  ] SELECT `id` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T15:27:47.899+08:00 [DEBU] {6e38067ca4595618fb7e4d6ee8243107} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T15:27:47.899+08:00 [DEBU] {6e38067ca4595618fb7e4d6ee8243107} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T15:27:47.899+08:00 [DEBU] {6e38067ca4595618fb7e4d6ee8243107} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=6 LIMIT 1
+2025-07-28T15:27:47.899+08:00 [DEBU] {6e38067ca4595618fb7e4d6ee8243107} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id` FROM `t_product_category` WHERE `pid`=6
+2025-07-28T15:30:40.763+08:00 [DEBU] {282588bbcc59561813dfc9655659559b} [  2 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T15:30:40.763+08:00 [DEBU] {344a9cbbcc59561814dfc965d2a844f7} [  0 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T15:30:40.764+08:00 [DEBU] {f54caabbcc59561815dfc96536582717} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T15:30:42.597+08:00 [DEBU] {87a8e428cd59561816dfc9658a6a1cf0} [  1 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T15:30:42.598+08:00 [DEBU] {87a8e428cd59561816dfc9658a6a1cf0} [  1 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:30:42.598+08:00 [DEBU] {87a8e428cd59561816dfc9658a6a1cf0} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:30:42.598+08:00 [DEBU] {87a8e428cd59561816dfc9658a6a1cf0} [  0 ms] [default] [device_management] [rows:2  ] SELECT `id` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T15:30:42.599+08:00 [DEBU] {87a8e428cd59561816dfc9658a6a1cf0} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T15:30:42.599+08:00 [DEBU] {87a8e428cd59561816dfc9658a6a1cf0} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T15:30:42.599+08:00 [DEBU] {87a8e428cd59561816dfc9658a6a1cf0} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=6 LIMIT 1
+2025-07-28T15:30:42.599+08:00 [DEBU] {87a8e428cd59561816dfc9658a6a1cf0} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id` FROM `t_product_category` WHERE `pid`=6
+2025-07-28T15:35:50.104+08:00 [DEBU] {23f7b0c1145a5618fed8d519e2f4d123} [  2 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T15:35:50.105+08:00 [DEBU] {b87ac5c1145a5618ffd8d519f3526935} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T15:35:50.105+08:00 [DEBU] {273ad6c1145a561800d9d519708079e3} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T15:35:52.281+08:00 [DEBU] {e3ac7b43155a561801d9d5192b242340} [  1 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T15:35:52.282+08:00 [DEBU] {e3ac7b43155a561801d9d5192b242340} [  0 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:35:52.282+08:00 [DEBU] {e3ac7b43155a561801d9d5192b242340} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:35:52.282+08:00 [DEBU] {e3ac7b43155a561801d9d5192b242340} [  0 ms] [default] [device_management] [rows:2  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T15:35:52.283+08:00 [DEBU] {e3ac7b43155a561801d9d5192b242340} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T15:35:52.283+08:00 [DEBU] {e3ac7b43155a561801d9d5192b242340} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T15:35:52.283+08:00 [DEBU] {e3ac7b43155a561801d9d5192b242340} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=6 LIMIT 1
+2025-07-28T15:35:52.283+08:00 [DEBU] {e3ac7b43155a561801d9d5192b242340} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=6
+2025-07-28T15:36:03.820+08:00 [DEBU] {172b48f3175a561802d9d519ff44b330} [  1 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:36:03.820+08:00 [DEBU] {172b48f3175a561802d9d519ff44b330} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:36:03.821+08:00 [DEBU] {172b48f3175a561802d9d519ff44b330} [  1 ms] [default] [device_management] [rows:2  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T15:36:03.821+08:00 [DEBU] {172b48f3175a561802d9d519ff44b330} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T15:36:03.821+08:00 [DEBU] {172b48f3175a561802d9d519ff44b330} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T15:36:03.821+08:00 [DEBU] {172b48f3175a561802d9d519ff44b330} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=6 LIMIT 1
+2025-07-28T15:36:03.822+08:00 [DEBU] {172b48f3175a561802d9d519ff44b330} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=6
+2025-07-28T15:36:18.129+08:00 [DEBU] {a1d72b481b5a5618b0cffb1d0dd0c718} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T15:36:18.131+08:00 [DEBU] {4d403e481b5a5618b1cffb1d194a0298} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T15:36:18.131+08:00 [DEBU] {b30850481b5a5618b2cffb1ddfaa7644} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T15:36:20.912+08:00 [DEBU] {653affed1b5a5618b3cffb1db3cba35a} [  1 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T15:36:20.913+08:00 [DEBU] {653affed1b5a5618b3cffb1db3cba35a} [  0 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:36:20.913+08:00 [DEBU] {653affed1b5a5618b3cffb1db3cba35a} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:36:20.914+08:00 [DEBU] {653affed1b5a5618b3cffb1db3cba35a} [  0 ms] [default] [device_management] [rows:2  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T15:36:20.914+08:00 [DEBU] {653affed1b5a5618b3cffb1db3cba35a} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T15:36:20.915+08:00 [DEBU] {653affed1b5a5618b3cffb1db3cba35a} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T15:36:20.915+08:00 [DEBU] {653affed1b5a5618b3cffb1db3cba35a} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=6 LIMIT 1
+2025-07-28T15:36:20.916+08:00 [DEBU] {653affed1b5a5618b3cffb1db3cba35a} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=6
+2025-07-28T15:44:04.941+08:00 [DEBU] {079e4ef8875a5618831eea388842843a} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T15:44:04.942+08:00 [DEBU] {1b6663f8875a5618841eea3857223281} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T15:44:04.943+08:00 [DEBU] {5fd177f8875a5618851eea3845b72a3d} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T15:44:07.982+08:00 [DEBU] {fb0d98ad885a5618861eea38bd27c142} [  0 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T15:44:07.983+08:00 [DEBU] {fb0d98ad885a5618861eea38bd27c142} [  0 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:44:07.983+08:00 [DEBU] {fb0d98ad885a5618861eea38bd27c142} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:44:07.984+08:00 [DEBU] {fb0d98ad885a5618861eea38bd27c142} [  1 ms] [default] [device_management] [rows:2  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T15:44:07.984+08:00 [DEBU] {fb0d98ad885a5618861eea38bd27c142} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T15:44:07.984+08:00 [DEBU] {fb0d98ad885a5618861eea38bd27c142} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T15:44:07.985+08:00 [DEBU] {fb0d98ad885a5618861eea38bd27c142} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=6 LIMIT 1
+2025-07-28T15:44:07.985+08:00 [DEBU] {fb0d98ad885a5618861eea38bd27c142} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=6
+2025-07-28T15:51:06.754+08:00 [DEBU] {9ec90a2eea5a5618871eea38dc7bd0ac} [  6 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(0,'1','一级目录','2025-07-28 15:51:06','2025-07-28 15:51:06') 
+2025-07-28T15:51:08.414+08:00 [DEBU] {bdd4ee90ea5a5618881eea385587b165} [  7 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(0,'1','一级目录','2025-07-28 15:51:08','2025-07-28 15:51:08') 
+2025-07-28T15:51:17.763+08:00 [DEBU] {9ce513bbec5a5618891eea383cbbdc46} [ 59 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(8,'1','二级目录','2025-07-28 15:51:17','2025-07-28 15:51:17') 
+2025-07-28T15:51:25.863+08:00 [DEBU] {92d005a1ee5a56188a1eea38ccc95ed5} [  6 ms] [default] [device_management] [rows:1  ] INSERT INTO `t_product_category`(`pid`,`org_id`,`name`,`created_at`,`updated_at`) VALUES(9,'1','三级目录','2025-07-28 15:51:25','2025-07-28 15:51:25') 
+2025-07-28T15:53:06.937+08:00 [DEBU] {c91fc629065b56184b57f34393444b7b} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T15:53:06.938+08:00 [DEBU] {30c1d729065b56184c57f34330ebeeb4} [  1 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T15:53:06.938+08:00 [DEBU] {ec9ee829065b56184d57f343d0aa8d8c} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T15:53:36.685+08:00 [DEBU] {7d1aee160d5b56184e57f343e21ee3e5} [  1 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T15:53:36.686+08:00 [DEBU] {7d1aee160d5b56184e57f343e21ee3e5} [  0 ms] [default] [device_management] [rows:0  ] SELECT 1 FROM `t_product_category` WHERE `id`=0 LIMIT 1
+2025-07-28T15:53:50.677+08:00 [DEBU] {17ddea58105b56184f57f343c6323e0d} [  1 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:53:50.678+08:00 [DEBU] {17ddea58105b56184f57f343c6323e0d} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T15:53:50.678+08:00 [DEBU] {17ddea58105b56184f57f343c6323e0d} [  0 ms] [default] [device_management] [rows:2  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T15:53:50.678+08:00 [DEBU] {17ddea58105b56184f57f343c6323e0d} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T15:53:50.679+08:00 [DEBU] {17ddea58105b56184f57f343c6323e0d} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T15:53:50.679+08:00 [DEBU] {17ddea58105b56184f57f343c6323e0d} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=6 LIMIT 1
+2025-07-28T15:53:50.679+08:00 [DEBU] {17ddea58105b56184f57f343c6323e0d} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=6
+2025-07-28T16:23:02.309+08:00 [DEBU] {93e1232ea85c5618172f1a63ce379add} [  4 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T16:23:02.311+08:00 [DEBU] {a43b5c2ea85c5618182f1a630d72ecf3} [  2 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T16:23:02.318+08:00 [DEBU] {8931862ea85c5618192f1a63f1a0272a} [  6 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1
+2025-07-28T16:23:29.033+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  2 ms] [default] [device_management] [rows:6  ] SHOW FULL COLUMNS FROM `t_product_category`
+2025-07-28T16:23:29.034+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  1 ms] [default] [device_management] [rows:3  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE (`org_id`='1') AND (`pid`=0)
+2025-07-28T16:23:29.034+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T16:23:29.034+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T16:23:29.035+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  1 ms] [default] [device_management] [rows:2  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T16:23:29.035+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T16:23:29.035+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T16:23:29.035+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=6 LIMIT 1
+2025-07-28T16:23:29.036+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=6
+2025-07-28T16:23:29.036+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=7 LIMIT 1
+2025-07-28T16:23:29.036+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=7 LIMIT 1
+2025-07-28T16:23:29.036+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=7
+2025-07-28T16:23:29.037+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=8 LIMIT 1
+2025-07-28T16:23:29.037+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=8 LIMIT 1
+2025-07-28T16:23:29.037+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=8
+2025-07-28T16:23:29.038+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=9 LIMIT 1
+2025-07-28T16:23:29.038+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=9
+2025-07-28T16:23:29.038+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=10 LIMIT 1
+2025-07-28T16:23:29.039+08:00 [DEBU] {31b51d67ae5c56181a2f1a638747aca4} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=10
+2025-07-28T16:24:20.616+08:00 [DEBU] {2079c469ba5c56181b2f1a6392a28afa} [  1 ms] [default] [device_management] [rows:1  ] SELECT 1 FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T16:24:20.616+08:00 [DEBU] {2079c469ba5c56181b2f1a6392a28afa} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=4 LIMIT 1
+2025-07-28T16:24:20.617+08:00 [DEBU] {2079c469ba5c56181b2f1a6392a28afa} [  0 ms] [default] [device_management] [rows:2  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=4
+2025-07-28T16:24:20.617+08:00 [DEBU] {2079c469ba5c56181b2f1a6392a28afa} [  0 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=5 LIMIT 1
+2025-07-28T16:24:20.617+08:00 [DEBU] {2079c469ba5c56181b2f1a6392a28afa} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=5
+2025-07-28T16:24:20.618+08:00 [DEBU] {2079c469ba5c56181b2f1a6392a28afa} [  1 ms] [default] [device_management] [rows:1  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `id`=6 LIMIT 1
+2025-07-28T16:24:20.618+08:00 [DEBU] {2079c469ba5c56181b2f1a6392a28afa} [  0 ms] [default] [device_management] [rows:0  ] SELECT `id`,`pid`,`org_id`,`name`,`created_at`,`updated_at` FROM `t_product_category` WHERE `pid`=6
+2025-07-28T17:36:34.354+08:00 [DEBU] {4eaaa770ab60561861229b5d85218ab7} [  1 ms] [default] [device_management] [rows:3  ] SHOW TABLES
+2025-07-28T17:36:34.356+08:00 [DEBU] {bfddc070ab60561862229b5d7132298a} [  2 ms] [default] [device_management] [rows:15 ] SHOW FULL COLUMNS FROM `t_cron_job`
+2025-07-28T17:36:34.357+08:00 [DEBU] {b428da70ab60561863229b5d919fede1} [  1 ms] [default] [device_management] [rows:0  ] SELECT `id`,`name`,`params`,`invoke_target`,`cron_expression`,`status`,`execute_status`,`last_execute_at`,`next_execute_at`,`execute_count`,`success_count`,`failed_count`,`remark`,`created_at`,`updated_at` FROM `t_cron_job` WHERE `status`=1

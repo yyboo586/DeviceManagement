@@ -1,0 +1,13 @@
+[Unit]
+Description=DeviceManagement Service
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/usr/share/device_management
+ExecStart=/usr/share/device_management/device_management
+Restart=on-failure
+RestartSec=30s
+
+[Install]
+WantedBy=multi-user.target
